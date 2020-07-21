@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  max-width: 100%;
+  font-family: "STCForward", sans-serif, arial;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  color: #1d252d;
+}
+
+p {
+  line-height: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input[type=email],
+input[type=tel] {
+  direction: ltr !important;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #1d252d;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+}
+.flex.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex.flex-dir-col {
+  flex-direction: column;
+}
+.flex.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.flex.align-center {
+  align-items: center;
+}
+.flex.justify-between {
+  justify-content: space-between;
+}
+.flex.direction-column {
+  flex-direction: column;
+}
+
+.btn {
+  padding: 12px 32px;
+  font-size: 17px;
+  border-radius: 3px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn.main-btn {
+  background-color: #ff375e;
+  color: #fff;
+}
+.btn.outline-btn {
+  color: #ff375e;
+  background-color: transparent;
+  border: 2px solid #ff375e;
+}
+.btn.f-width {
+  width: 100% !important;
+}
+.btn:disabled {
+  background-color: #a8abae;
+  cursor: not-allowed;
+}
+
+/*# sourceMappingURL=styles.css.map */
