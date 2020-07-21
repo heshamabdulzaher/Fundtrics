@@ -1,6 +1,6 @@
-$mainColor: #4f008c;
-$S_color: #ff375e;
-$txtColor: #1d252d;
+$pColor: #08d9d6;
+$sColor: #ff2e63;
+$darkColor: #252a34;
 * {
   box-sizing: border-box;
   padding: 0;
@@ -17,7 +17,7 @@ html {
 
 body {
   background-color: #fff;
-  color: $txtColor;
+  color: $darkColor;
 }
 
 p {
@@ -35,7 +35,7 @@ input[type='tel'] {
 a {
   text-decoration: none;
   display: inline-block;
-  color: $txtColor;
+  color: $darkColor;
 }
 img {
   max-width: 100%;
@@ -43,7 +43,7 @@ img {
 
 // main-container
 .main-container {
-  max-width: 1100px;
+  max-width: 1600px;
   width: 100%;
   margin: auto;
   padding: 0 20px;
@@ -51,50 +51,53 @@ img {
 
 .flex {
   display: flex;
-  &.flex-wrap {
+  &.flex_wrap {
     flex-wrap: wrap;
   }
-  &.flex-dir-col {
+  &.flex_dir-col {
     flex-direction: column;
   }
-  &.flex-center {
+  &.flex_center {
     align-items: center;
     justify-content: center;
   }
-  &.align-center {
+  &.flex_align-center {
     align-items: center;
   }
-  &.justify-between {
+  &.flex_justify-between {
     justify-content: space-between;
-  }
-  &.direction-column {
-    flex-direction: column;
   }
 }
 
 .btn {
   padding: 12px 32px;
   font-size: 17px;
+  font-weight: bold;
   border-radius: 3px;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.18);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  &.main-btn {
-    background-color: $S_color;
+  &.btn-primary {
+    background-color: $pColor;
     color: #fff;
   }
-  &.outline-btn {
-    color: $S_color;
-    background-color: transparent;
-    border: 2px solid $S_color;
-  }
-  &.f-width {
-    width: 100% !important;
-  }
-  &:disabled {
-    background-color: #a8abae;
-    cursor: not-allowed;
-  }
+  //   &.round-outline-btn {
+  //     border-radius: 100px;
+  //     background-color: transparent;
+  //     border: 2px solid $sColor;
+  //     color: $sColor;
+  //   }
+  //   &.outline-btn {
+  //     color: $sColor;
+  //     background-color: transparent;
+  //     border: 2px solid $sColor;
+  //   }
+  //   &.f-width {
+  //     width: 100% !important;
+  //   }
+  //   &:disabled {
+  //     background-color: #a8abae;
+  //     cursor: not-allowed;
+  //   }
 }
