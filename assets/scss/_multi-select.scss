@@ -1,0 +1,89 @@
+.multi-select {
+  position: relative;
+  user-select: none;
+  .select-btn {
+    padding: 0 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: #787878;
+    background-color: #f5f6f8;
+    border: 2px solid #f4f3f4;
+    border-radius: 4px;
+    cursor: pointer;
+    img {
+      margin-left: 8px;
+    }
+  }
+  .options-selected-counter {
+    position: absolute;
+    z-index: 2;
+    top: -10px;
+    left: -10px;
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: $txtColor;
+    color: $sColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: showOptions 0.1s ease-in;
+    &.empty {
+      display: none;
+    }
+  }
+  .select-options-card {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 8px 0;
+    border-radius: 4px;
+    animation: showOptions 0.1s ease-in forwards;
+    transform-origin: 80% 60%;
+
+    // display: none;
+    &.show {
+      display: block;
+    }
+    &.hide {
+      display: none;
+    }
+
+    li {
+      border-bottom: 1px solid $lightGray;
+      &:last-of-type {
+        border-bottom: 0;
+      }
+    }
+    label {
+      padding: 12px;
+      transition: all 0.12 ease-out;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &:hover,
+      &.checked {
+        background-color: $lightGray;
+      }
+    }
+    input {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+@keyframes showOptions {
+  from {
+    transform: scale(0.4);
+    box-shadow: none;
+  }
+  to {
+    transform: scale(1);
+    box-shadow: $shadow1;
+  }
+}
