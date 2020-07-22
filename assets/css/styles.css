@@ -205,8 +205,8 @@ header .btn-primary {
   background-color: #fff;
   padding: 8px 0;
   border-radius: 4px;
-  animation: showOptions 0.1s ease-in forwards;
-  transform-origin: 80% 60%;
+  animation: showOptions 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transform-origin: 90% 30%;
 }
 .multi-select .select-options-card.show {
   display: block;
