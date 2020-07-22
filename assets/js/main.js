@@ -43,9 +43,9 @@ document.addEventListener('click', e => {
 var chart1 = document.getElementById('chart1').getContext('2d');
 var chart2 = document.getElementById('chart2').getContext('2d');
 var chart3 = document.getElementById('chart3').getContext('2d');
-createChart(chart1, [15, 20]);
-createChart(chart2, [15, 20]);
-createChart(chart3, [15, 20]);
+createChart(chart1, [40, 20]);
+createChart(chart2, [20, 27]);
+createChart(chart3, [10, 12]);
 
 function createChart(chartEl, data) {
   let chart = new Chart(chartEl, {
@@ -53,7 +53,7 @@ function createChart(chartEl, data) {
     type: 'line',
     // The data for our dataset
     data: {
-      labels: ['January', 'February', 'March', 'April'],
+      labels: ['January', 'February'],
       datasets: [
         {
           label: 'My First dataset',
@@ -73,4 +73,5 @@ function createChart(chartEl, data) {
     },
   });
   chart.canvas.parentNode.style.width = '30%';
+  return chart;
 }
