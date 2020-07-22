@@ -40,39 +40,37 @@ document.addEventListener('click', e => {
 });
 
 // Charts
-var ctx = document.getElementById('chart1').getContext('2d');
-var chart = new Chart(ctx, {
-  // The type of chart we want to create
-  type: 'line',
-  // The data for our dataset
-  data: {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    datasets: [
-      {
-        label: 'My First dataset',
-        backgroundColor: '#e23e57',
-        borderColor: '#e23e57',
-        data: [10, 15, 22, 27, 20, 12, 18],
-        pointRadius: 3,
-        fill: false,
-        // borderDash: [15, 10],
-      },
-      {
-        label: 'My First dataset',
-        backgroundColor: '#3a414f',
-        borderColor: '#3a414f',
-        data: [20, 22, 14, 10, 16, 30, 24],
-        pointRadius: 3,
-        fill: false,
-        // borderDash: [15, 10],
-      },
-    ],
-  },
-  options: {
-    legend: {
-      display: false,
+var chart1 = document.getElementById('chart1').getContext('2d');
+var chart2 = document.getElementById('chart2').getContext('2d');
+var chart3 = document.getElementById('chart3').getContext('2d');
+createChart(chart1, [15, 20]);
+createChart(chart2, [15, 20]);
+createChart(chart3, [15, 20]);
+
+function createChart(chartEl, data) {
+  let chart = new Chart(chartEl, {
+    // The type of chart we want to create
+    type: 'line',
+    // The data for our dataset
+    data: {
+      labels: ['January', 'February', 'March', 'April'],
+      datasets: [
+        {
+          label: 'My First dataset',
+          backgroundColor: ['#3498db', '#e67e22'],
+          data,
+          pointRadius: 3,
+          showLine: false,
+          fill: false,
+        },
+      ],
     },
-    aspectRatio: 2,
-  },
-});
-chart.canvas.parentNode.style.width = '500px';
+    options: {
+      legend: {
+        display: false,
+      },
+      aspectRatio: 2,
+    },
+  });
+  chart.canvas.parentNode.style.width = '30%';
+}

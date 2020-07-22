@@ -5,6 +5,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon/favicon-16x16.png"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
@@ -16,7 +33,7 @@
       <div class="main-container flex flex_justify-between flex_align-center">
         <section class="flex flex_align-center">
           <div class="logo">
-            <img src="./assets/img/logo.jpg" alt="logo" />
+            <img src="./assets/img/logo.png" alt="logo" />
           </div>
           <ul class="flex flex_align-center">
             <li><a href="#">Home</a></li>
@@ -35,173 +52,125 @@
     </header>
 
     <!-- Main -->
-    <main class="main-container flex">
-      <div class="main-content">
-        <section class="flex flex_justify-between flex_align-center">
-          <h1>Fund Analysis</h1>
-          <a href="#" class="outline-link">
-            <span>Fund Prospectus Link</span>
-            <img src="./assets/img/icons/open-link.svg" alt="open link icon" />
-          </a>
-        </section>
+    <main class="main-container">
+      <section class="flex flex_justify-between flex_align-center">
+        <h1>Fund Analysis</h1>
+        <a href="#" class="outline-link">
+          <span>Fund Prospectus Link</span>
+          <img src="./assets/img/icons/open-link.svg" alt="open link icon" />
+        </a>
+      </section>
 
-        <section class="full-fund-name">
-          <div class="flex flex_justify-between">
-            <div class="info">
-              <div class="section-title">Full Fund Name</div>
-              <div class="flex">
-                <span>Latest NAV: 100 SAR</span>
-                <span>%0.1</span>
-                <span>Latest Valuation: 01/01/2016 </span>
-              </div>
-            </div>
-            <div class="multi-select">
-              <div class="select-btn">
-                <em>Benchmark select</em>
-                <img
-                  src="./assets/img/icons/select-arrow.svg"
-                  alt="Arrow icon"
-                />
-              </div>
-              <div class="options-selected-counter">2</div>
-              <div class="select-options-card">
-                <ul>
-                  <li>
-                    <label>
-                      <span>Option 1</span>
-                      <input type="checkbox" name="benchmark-select" />
-                    </label>
-                  </li>
-                  <li>
-                    <label>
-                      <span>Option 2</span>
-                      <input type="checkbox" name="benchmark-select" />
-                    </label>
-                  </li>
-                  <li>
-                    <label>
-                      <span>Option 3</span>
-                      <input type="checkbox" name="benchmark-select" />
-                    </label>
-                  </li>
-                </ul>
-              </div>
+      <section class="full-fund-name">
+        <div class="flex flex_justify-between">
+          <div class="info">
+            <div class="section-title">Full Fund Name</div>
+            <div class="flex">
+              <span>Latest NAV: 100 SAR</span>
+              <span>%0.1</span>
+              <span>Latest Valuation: 01/01/2016 </span>
             </div>
           </div>
-        </section>
-
-        <section class="investment-strategy">
-          <div class="section-title">Investment Strategy</div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            blanditiis quam itaque doloremque, illo nihil at cum aperiam tempore
-            necessitatibus. Alias eum laborum, accusamus eos eveniet
-            necessitatibus dolorum ipsum repellat! Soluta sint, totam at
-            doloribus nesciunt magni, earum fugit voluptas, voluptatibus numquam
-            eos doloremque modi possimus iusto expedita vel natus laudantium!
-          </p>
-        </section>
-
-        <section class="returns-history">
-          <div class="section-title">Returns History</div>
-          <table>
-            <tr>
-              <th>Name</th>
-              <th>2011</th>
-              <th>2012</th>
-              <th>2013</th>
-              <th>2014</th>
-              <th>2015</th>
-              <th>2016</th>
-            </tr>
-            <tr>
-              <td>Fund</td>
-            </tr>
-            <tr>
-              <td>Benchmark 1</td>
-            </tr>
-            <tr>
-              <td>Excess Return</td>
-            </tr>
-          </table>
-        </section>
-
-        <section class="fund-charts">
-          <div class="section-title">Fund Charts</div>
-          <div class="flex">
-            <canvas id="chart1"></canvas>
+          <div class="multi-select">
+            <div class="select-btn">
+              <em>Benchmark select</em>
+              <img src="./assets/img/icons/select-arrow.svg" alt="Arrow icon" />
+            </div>
+            <div class="options-selected-counter">2</div>
+            <div class="select-options-card">
+              <ul>
+                <li>
+                  <label>
+                    <span>Option 1</span>
+                    <input type="checkbox" name="benchmark-select" />
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <span>Option 2</span>
+                    <input type="checkbox" name="benchmark-select" />
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <span>Option 3</span>
+                    <input type="checkbox" name="benchmark-select" />
+                  </label>
+                </li>
+              </ul>
+            </div>
           </div>
-        </section>
-      </div>
-      <div class="main-table">
+        </div>
+      </section>
+
+      <section class="investment-strategy">
+        <div class="section-title">Investment Strategy</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+          blanditiis quam itaque doloremque, illo nihil at cum aperiam tempore
+          necessitatibus. Alias eum laborum, accusamus eos eveniet
+          necessitatibus dolorum ipsum repellat! Soluta sint, totam at doloribus
+          nesciunt magni, earum fugit voluptas, voluptatibus numquam eos
+          doloremque modi possimus iusto expedita vel natus laudantium!
+        </p>
+      </section>
+
+      <section class="returns-history">
+        <div class="section-title">Returns History</div>
         <table>
           <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Savings</th>
+            <th>Name</th>
+            <th>2011</th>
+            <th>2012</th>
+            <th>2013</th>
+            <th>2014</th>
+            <th>2015</th>
+            <th>2016</th>
           </tr>
           <tr>
-            <td>Peter</td>
-            <td>Griffin</td>
-            <td>$100</td>
+            <td>Fund</td>
           </tr>
           <tr>
-            <td>Lois</td>
-            <td>Griffin</td>
-            <td>$150</td>
+            <td>Benchmark 1</td>
           </tr>
           <tr>
-            <td>Joe</td>
-            <td>Swanson</td>
-            <td>$300</td>
-          </tr>
-          <tr>
-            <td>Cleveland</td>
-            <td>Brown</td>
-            <td>$250</td>
-          </tr>
-          <tr>
-            <td>Peter</td>
-            <td>Griffin</td>
-            <td>$100</td>
-          </tr>
-          <tr>
-            <td>Lois</td>
-            <td>Griffin</td>
-            <td>$150</td>
-          </tr>
-          <tr>
-            <td>Joe</td>
-            <td>Swanson</td>
-            <td>$300</td>
-          </tr>
-          <tr>
-            <td>Cleveland</td>
-            <td>Brown</td>
-            <td>$250</td>
-          </tr>
-          <tr>
-            <td>Peter</td>
-            <td>Griffin</td>
-            <td>$100</td>
-          </tr>
-          <tr>
-            <td>Lois</td>
-            <td>Griffin</td>
-            <td>$150</td>
-          </tr>
-          <tr>
-            <td>Joe</td>
-            <td>Swanson</td>
-            <td>$300</td>
-          </tr>
-          <tr>
-            <td>Cleveland</td>
-            <td>Brown</td>
-            <td>$250</td>
+            <td>Excess Return</td>
           </tr>
         </table>
-      </div>
+      </section>
+
+      <section class="fund-charts">
+        <div class="section-title">Fund Charts</div>
+        <div class="flex flex_justify-between">
+          <div><canvas id="chart1"></canvas></div>
+          <div><canvas id="chart2"></canvas></div>
+          <div><canvas id="chart3"></canvas></div>
+        </div>
+      </section>
+
+      <section class="returns-history">
+        <div class="section-title">Returns History</div>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>2011</th>
+            <th>2012</th>
+            <th>2013</th>
+            <th>2014</th>
+            <th>2015</th>
+            <th>2016</th>
+          </tr>
+          <tr>
+            <td>Fund</td>
+          </tr>
+          <tr>
+            <td>Benchmark 1</td>
+          </tr>
+          <tr>
+            <td>Excess Return</td>
+          </tr>
+        </table>
+      </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>

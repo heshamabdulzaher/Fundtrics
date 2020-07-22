@@ -42,7 +42,7 @@ img {
 }
 
 .main-container {
-  max-width: 1700px;
+  max-width: 1300px;
   width: 100%;
   margin: auto;
   padding: 0 15px;
@@ -92,74 +92,47 @@ main h1 {
   color: #58595c;
   text-transform: uppercase;
 }
-main .main-table {
-  width: 600px;
-  background-color: #f4f5f7;
-  padding: 20px;
-  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  height: 100%;
-}
-main .main-table table,
-main .main-table td,
-main .main-table th {
-  border: 1px solid #ddd;
-  text-align: left;
-}
-main .main-table table {
-  border-collapse: collapse;
-  width: 100%;
-}
-main .main-table th,
-main .main-table td {
-  padding: 15px;
-}
-main .main-content {
-  flex: 1;
-  margin-right: 30px;
-}
-main .main-content .outline-link {
+main .outline-link {
   display: flex;
   align-items: center;
   color: #e23e57;
   font-weight: 600;
 }
-main .main-content .outline-link img {
+main .outline-link img {
   margin-left: 6px;
 }
-main .main-content .outline-link:hover {
+main .outline-link:hover {
   text-decoration: underline;
 }
-main .main-content section {
+main section {
   margin-bottom: 40px;
 }
-main .main-content section.full-fund-name span {
+main section.full-fund-name span {
   margin-right: 32px;
   font-weight: 600;
 }
-main .main-content section.returns-history table {
+main section.returns-history table {
   border-collapse: collapse;
   font-size: 14px;
   width: 100%;
 }
-main .main-content section.returns-history th {
+main section.returns-history th {
   padding: 8px;
   text-align: start;
   color: #58595c;
   border-bottom: 1px solid #ddd;
 }
-main .main-content section.returns-history td {
+main section.returns-history td {
   padding: 4px 8px;
 }
-main .main-content section.fund-charts canvas {
+main section.fund-charts canvas {
   width: 300px;
 }
-main .main-content .section-title {
+main .section-title {
   font-size: 18px;
   margin-bottom: 10px;
   color: #000;
 }
-
 header {
   padding: 12px 0;
   background-color: #3a414f;
