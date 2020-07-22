@@ -165,17 +165,10 @@ header {
   background-color: #3a414f;
 }
 header .logo {
-  color: #f4f5f7;
-  color: #e23e57;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), 3px 3px 1px rgba(0, 0, 0, 0.4);
-  border-radius: 3px;
   margin-right: 40px;
-  font-size: 30px;
-  font-weight: 900;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+header .logo img {
+  width: 50px;
 }
 header li a {
   height: 44px;
