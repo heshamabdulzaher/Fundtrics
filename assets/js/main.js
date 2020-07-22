@@ -75,4 +75,4 @@ var chart = new Chart(ctx, {
     aspectRatio: 2,
   },
 });
-chart.canvas.parentNode.style.width = '46%';
+chart.canvas.parentNode.style.width = '500px';
